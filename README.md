@@ -108,7 +108,7 @@ export default class PeoplesService {
         }
     })
 
-    defaultVMessage = () => 'Error to handle people's'
+    defaultVMessage = () => 'Error to handle peoples'
 
     // validations
     validation = () => ({
@@ -116,7 +116,7 @@ export default class PeoplesService {
             validator: (value) => value.length > 2, // validation
             message: 'Name is invalid' // message to error case
         },
-        // simple validator, the error message is 'Error to handle people's'
+        // simple validator, the error message is 'Error to handle peoples'
         key: (value) => key > 0
     })
 }
