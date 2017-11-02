@@ -11,31 +11,31 @@ Before installing, you must install and configure some packages to make use of t
 
 First, install the `babel-polyfill` package to allow use async and await keywords:
 
-```
+```shell
 npm install babel-polyfill --save
 ```
 
 To allow, edit the `webpack.config.js`, replacing the line:
 
-```
+```json
 entry: './src/main.js',
 ```
 
 To:
 
-```
+```json
 entry: ['babel-polyfill', './src/main.js'],
 ```
 
 If your want use arrow function in your services, please install `transform-class-properties` plugin:
 
-```
+```shell
 npm install babel-plugin-transform-class-properties --save-dev
 ```
 
 In your `.babelrc` file, register this plugin:
 
-```
+```json
 {
   ...
   "plugins": [
@@ -47,13 +47,14 @@ In your `.babelrc` file, register this plugin:
 ## Installation
 
 To install this plugin run:
-```
+
+```shell
 npm install vue-fast-axios --save
 ```
 
 After it, register he in Vue application, in `main.js` file:
 
-```
+```javascript
 import VueFastAxios from 'vue-fast-axios'
 Vue.use(VueFastAxios)
 ```
@@ -71,7 +72,7 @@ An service is compound with follow definitions:
 
     See an example:
 
-```
+```javascript
 'use strict'
 
 // Export service skeleton class
@@ -125,7 +126,7 @@ export default class PeoplesService {
 
 In your vue componentes, use method `$serviceFactory` to create an service with skeleton created before:
 
-```
+```vue
 <template>
   ...
 </template>
@@ -159,7 +160,7 @@ To use this methods, your component must have `validationError` method, they is 
 
 See an metaphorical example:
 
-```
+```vue
 <template>
   <div id="app">
     <button @click="createPeople">Create people</button>

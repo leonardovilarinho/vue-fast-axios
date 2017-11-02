@@ -1,6 +1,6 @@
 {
   "name": "vue-fast-axios",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Solution to remove and simplify axios in components vue",
   "main": "dist/index.js",
   "scripts": {
