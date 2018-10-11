@@ -52,7 +52,7 @@ To install this plugin run:
 npm install vue-fast-axios --save
 ```
 
-After it, register he in Vue application, in `main.js` file:
+and then, register he in Vue application, in `main.js` file:
 
 ```javascript
 import VueFastAxios from 'vue-fast-axios'
